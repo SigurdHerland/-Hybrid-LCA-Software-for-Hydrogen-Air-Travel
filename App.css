@@ -1,0 +1,113 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #dc53de;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  width: auto; /* Adjust width to fit its content or set a specific width */
+  position: absolute; /* Position it absolutely within its relative parent */
+  top: 5vh; /* Adjust this value based on where you want it vertically, increased from 1vh in .top-text to avoid overlap */
+  left: 50%; /* Center the form-wrapper horizontally */
+  transform: translateX(-50%); /* Align center properly */
+  padding: 20px; /* Optional: add some padding around the form */
+  border-radius: 10px; /* Optional: if you want rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+  background-color: #e9ecef82;/* Optional: background color */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: rgba(21, 189, 231, 0.87); /* Consider if this color should match the .form-wrapper or be different */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Ensure to adjust other styles as previously discussed */
+
+
+.input {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bffb5;
+  color: white;
+  border-radius: 5px;
+}
+
+.bar-chart {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 20px;
+  background-color: #e9ecef79;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  height: 180px;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar {
+  width: 200px;
+  background-color: #007bff;
+  border-radius: 1px;
+  border: 0.1px solid #00000038;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: rgb(0, 0, 0);
+  font-weight: medium;
+  
+}
+
+
+
+.bar-label {
+  text-align: center;
+  color: #000;
+  font-weight: medium;
+}
+
+.top-text {
+  width: auto; /* Changed from 100% to auto to fit the content */
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+  font-size: 1.5em; /* Adjust the font size as needed */
+  position: absolute;
+  top: 1vh; /* 5% from the top of the viewport height */
+  color: #000000; /* Hex color for the text */
+  padding: 10px 20px; /* Top and bottom padding of 10px, left and right padding of 20px */
+  border: 2px solid #00000000; /* Border color set to match text color */
+  background-color: #e9ecef79; /* Semi-transparent black background */
+  left: 50%; /* Center the div */
+  transform: translateX(-50%); /* Adjust horizontal position to truly center */
+  border-radius: 5px; /* Optional: rounds the corners of the border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds shadow for depth */
+}
